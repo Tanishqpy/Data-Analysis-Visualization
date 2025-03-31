@@ -3,7 +3,7 @@ library(dplyr)
 library(ggplot2)
 library(lattice)
 
-UBC_monthly <- read.csv("/home/avstr/Tanishq Laptop/Tanishq/Hackathon/IIP/IndicesIIP2011-12Monthly_annual_Jan25.csv")
+UBC_monthly <- read.csv("https://github.com/Tanishqpy/Data-Analysis-Visualization/raw/refs/heads/main/IndicesIIP2011-12Monthly_annual_Jan25.csv")
 
 UBC_monthly_indices_data <- UBC_monthly[6:11, 3:156]
 UBC_monthly_indices_data[] <- lapply(UBC_monthly_indices_data, function(x) as.numeric(x))
